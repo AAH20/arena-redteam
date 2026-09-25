@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "arena-redteam"
+version = "1.0.0"
+description = "Autonomous Jailbreak Arena & Competitive Security Benchmark for AI Agents"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "Apache-2.0"}
+authors = [
+    {name = "Ahmed Hassan"}
+]
+keywords = [
+    "ai-security",
+    "red-teaming",
+    "jailbreak-arena",
+    "prompt-injection",
+    "adversarial-testing",
+    "mcp-security",
+    "cybersecurity",
+    "penetration-testing"
+]
+dependencies = []
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0.0"
+]
+
+[project.scripts]
+arena-redteam = "arena_redteam.cli:main"
